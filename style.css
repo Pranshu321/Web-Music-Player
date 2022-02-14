@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&family=Play&family=Playfair+Display:wght@500&family=Shadows+Into+Light&display=swap");
+
+body {
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Play", sans-serif;
+  color: black;
+}
+
+/* nav bar  */
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: cyan;
+}
+nav ul a:hover {
+  color: red;
+}
+.logo img {
+  width: 56px;
+  /* margin-left: 20px; */
+  padding-right: 7px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+nav ul li {
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Seeker  */
+.container {
+  min-height: 70vh;
+  background-color: tomato;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  background-image: url("./img/bg.jpg");
+
+  /* color: white; */
+}
+.down {
+  position: sticky;
+  height: 122px;
+  background-color: black;
+  color: white;
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fas,
+.far {
+  cursor: pointer;
+}
+.icons {
+  margin-top: 23px;
+  /* cursor: pointer; */
+  /* color: white; */
+  /* background-color: white; */
+}
+#seek {
+  width: 80vw;
+  cursor: pointer;
+}
+.songinfo {
+  position: absolute;
+  color: white;
+  left: 10vw;
+}
+.songinfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+/* songi items  */
+.head {
+  margin-left: 200px;
+}
+.songitem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  width: 123%;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 32px;
+  margin-left: 12px;
+}
+
+.songitem img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 50%;
+}
